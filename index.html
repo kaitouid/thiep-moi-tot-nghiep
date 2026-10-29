@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#e6e2d6" />
+    <meta name="description" content="Thư mời dự lễ tốt nghiệp của Ngô Hải Minh Nguyên — một cột mốc nhỏ, một khởi đầu mới." />
+    <title>Thư mời tốt nghiệp · Ngô Hải Minh Nguyên</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=Literata:ital,opsz,wght@0,7..72,500;0,7..72,600;0,7..72,700;1,7..72,500;1,7..72,600&display=swap" rel="stylesheet">
+  </head>
+  <body class="is-sealed">
+    <div id="app">
+      <canvas id="scene" aria-hidden="true"></canvas>
+      <div class="grain" aria-hidden="true"></div>
+      <div id="confetti" class="confetti" aria-hidden="true"></div>
+
+      <div class="seal-cover" id="sealCover" role="dialog" aria-modal="true" aria-labelledby="sealTitle">
+        <div class="seal-paper">
+          <p class="seal-eyebrow">THƯ MỜI CÁ NHÂN</p>
+          <p class="seal-to" id="sealTo">Thân gửi gia đình và bạn bè</p>
+          <h2 class="seal-title" id="sealTitle">Một cột mốc<br><em>đáng nhớ</em></h2>
+          <button class="seal-button" id="openSeal" type="button" aria-label="Mở phong bì thiệp mời">
+            <span class="wax-seal" aria-hidden="true">
+              <svg viewBox="0 0 88 88" width="88" height="88">
+                <circle cx="44" cy="44" r="40" fill="#6b2e2a"/>
+                <circle cx="44" cy="44" r="32" fill="none" stroke="#c9a15b" stroke-width="1.5" opacity=".7"/>
+                <path d="M44 22c1.6 8.8 1.6 16.8 0 25.6C42.4 38.8 42.4 30.8 44 22zm0 18.4c1.6 8.8 1.6 16.8 0 25.6 1.6-8.8 1.6-16.8 0-25.6zM22 44c8.8-1.6 16.8-1.6 25.6 0-8.8 1.6-16.8 1.6-25.6 0zm18.4 0c8.8-1.6 16.8-1.6 25.6 0-8.8 1.6-16.8 1.6-25.6 0z" fill="#c9a15b"/>
+                <circle cx="44" cy="44" r="5" fill="#c9a15b"/>
+              </svg>
+            </span>
+            <span class="seal-hint">Chạm vào ấn để mở</span>
+          </button>
+          <p class="seal-from">Từ <span id="sealGraduate">Ngô Hải Minh Nguyên</span></p>
+        </div>
+      </div>
+
+      <header class="topbar">
+        <a class="wordmark" href="#hero" aria-label="Về đầu thư mời">
+          <img class="mark" src="/mark-star.svg" alt="" width="18" height="18" />
+          một cột mốc đáng nhớ
+        </a>
+        <span class="top-note">NIÊN KHÓA <span id="classYear">2026</span></span>
+      </header>
+
+      <main>
+        <section class="hero" id="hero">
+          <div class="eyebrow"><span class="eyebrow-line"></span> Khép lại một chương <span class="eyebrow-line"></span></div>
+          <p class="personal-greeting" id="personalGreeting">Thân mời gia đình và bạn bè,</p>
+          <h1>Ước mơ nhỏ.<br><em>Khởi đầu lớn.</em></h1>
+          <p class="hero-copy">Mình rất vui nếu bạn có thể đến chung vui cùng mình.</p>
+          <button class="primary-button" id="openInvite" type="button">Xem thiệp mời <span aria-hidden="true">↗</span></button>
+          <div class="scroll-cue"><span class="scroll-dot"></span> CUỘN XUỐNG</div>
+        </section>
+
+        <section class="invitation-section" id="invitation">
+          <div class="paper-card">
+            <div class="card-topline">
+              <span>TRÂN TRỌNG KÍNH MỜI</span>
+              <img class="inline-mark" src="/mark-star.svg" alt="" width="12" height="12" />
+              <span>THÂN THƯƠNG</span>
+            </div>
+            <div class="flower-stamp" aria-hidden="true">
+              <img src="/mark-flower.svg" alt="" width="42" height="42" />
+            </div>
+            <p class="script-intro">Cùng mình đón một khởi đầu mới</p>
+            <h2>Lễ Tốt Nghiệp<br><em>Đại Học</em></h2>
+            <div class="ornament" aria-hidden="true"><span></span><img src="/mark-leaf.svg" alt="" width="18" height="18" /><span></span></div>
+            <p class="invite-copy">Sau những đêm học muộn, những lần cố gắng và thật nhiều điều đã học được, mình sắp chạm đến một cột mốc đáng nhớ. Sự hiện diện của bạn sẽ khiến ngày vui này trở nên trọn vẹn hơn rất nhiều.</p>
+            <div class="details-grid">
+              <div class="detail">
+                <span class="detail-label">THỜI GIAN</span>
+                <strong id="eventDate">Thứ Bảy, 07/11/2026</strong>
+                <small id="eventTime">10:00 sáng</small>
+              </div>
+              <div class="detail">
+                <span class="detail-label">ĐỊA ĐIỂM</span>
+                <strong id="eventVenue">Hội trường lớn</strong>
+                <small id="eventAddress">Đại học FPT TP.HCM · Khu Công nghệ cao, Thủ Đức</small>
+              </div>
+            </div>
+            <div class="card-actions">
+              <a class="text-link" id="mapLink" href="https://maps.google.com/?q=FPT+University+HCMC" target="_blank" rel="noreferrer">Xem đường đi <span>↗</span></a>
+              <a class="text-link" id="calendarLink" href="#" target="_blank" rel="noreferrer">Thêm vào lịch <span>↗</span></a>
+            </div>
+            <div class="card-footer"><span>NIÊN KHÓA <b id="footerYear">2026</b></span><span>CẢM ƠN BẠN VÌ ĐÃ LÀ MỘT PHẦN TRONG HÀNH TRÌNH NÀY</span></div>
+          </div>
+        </section>
+
+        <section class="memory" id="memory" aria-label="Một kỷ niệm nhỏ">
+          <div class="memory-stage">
+            <!-- Đặt ảnh vào public/ rồi đổi src bên dưới (vd: /memory-1.jpg) -->
+            <figure class="memory-frame frame-a">
+              <img src="/memory-1.jpg" alt="Kỷ niệm 1" onerror="this.remove()" />
+            </figure>
+            <figure class="memory-frame frame-b">
+              <img src="/memory-2.jpg" alt="Kỷ niệm 2" onerror="this.remove()" />
+            </figure>
+            <figure class="memory-frame frame-c">
+              <img src="/memory-3.jpg" alt="Kỷ niệm 3" onerror="this.remove()" />
+            </figure>
+          </div>
+          <p class="script-intro memory-kicker">Những đêm học muộn…</p>
+          <h2 class="memory-title">và những người<br><em>đã đi cùng.</em></h2>
+          <p class="memory-copy" id="memoryCopy">Hành trình này đẹp hơn vì có bạn trong đó.</p>
+        </section>
+
+        <section class="closing">
+          <div class="closing-flower" aria-hidden="true">
+            <img src="/mark-flower.svg" alt="" width="42" height="42" />
+          </div>
+          <p class="script-intro">Mong rằng bạn có thể đến chung vui</p>
+          <h2>Cùng lưu giữ<br><em>một kỷ niệm đẹp.</em></h2>
+          <p class="closing-copy">Sự hiện diện của bạn là món quà quý giá nhất.<br>Hẹn gặp bạn trong ngày đặc biệt này nhé!</p>
+          <button class="share-button" id="shareInvite" type="button">Sao chép liên kết thiệp mời cá nhân</button>
+          <p class="tiny-note" id="shareStatus" aria-live="polite">Một tấm thiệp nhỏ, gửi bằng tất cả yêu thương.</p>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <span><img class="inline-mark" src="/mark-star.svg" alt="" width="10" height="10" /> MỘT CỘT MỐC ĐÁNG NHỚ</span>
+        <span>MỘT CHƯƠNG KHÉP LẠI. ĐIỀU KỲ DIỆU TIẾP TỤC.</span>
+      </footer>
+      <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    </div>
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>

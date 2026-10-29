@@ -1,0 +1,40 @@
+name: Triển khai thiệp mời lên GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "github-pages"
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Lấy mã nguồn
+        uses: actions/checkout@v4
+      - name: Cài Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - name: Cài thư viện
+        run: npm install
+      - name: Đóng gói website
+        run: npm run build
+      - name: Thiết lập GitHub Pages
+        uses: actions/configure-pages@v5
+      - name: Tải bản dựng lên
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./dist
+      - name: Triển khai
+        id: deployment
+        uses: actions/deploy-pages@v4
