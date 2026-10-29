@@ -1,4 +1,4 @@
-# Thiệp mời tốt nghiệp — Nguyễn Minh Anh
+# Thiệp mời tốt nghiệp — Nguyen
 
 Website thiệp mời tốt nghiệp có hiệu ứng mũ tốt nghiệp 3D bằng Three.js, phong cách giấy ấm áp và màu xanh lá dịu. Toàn bộ nội dung hiển thị được viết bằng tiếng Việt. Không cần máy chủ, tài khoản khách mời hay cơ sở dữ liệu.
 
