@@ -10,8 +10,8 @@ const EVENT = {
   time: '10:00 - 12:00 sáng',
   dateTime: '2026-11-07T10:00:00+07:00',
   endDateTime: '2026-11-07T12:00:00+07:00',
-  venue: 'Hội trường lớn',
-  address: 'Đại học FPT TP.HCM · Khu Công nghệ cao, Thủ Đức',
+  venue: 'Đại học FPT TP.HCM',
+  address: 'Khu Công nghệ cao, Thủ Đức',
   mapsUrl: 'https://maps.google.com/?q=FPT+University+HCMC',
 };
 
